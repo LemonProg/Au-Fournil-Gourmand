@@ -12,11 +12,11 @@
 </head>
 <body>
     <div class="header">
-        <h1>Au Fournil Gourmand</h1>
-        <h2 class="header" id="h2_b">Boulangerie</h2>
-        <h2 class="header" id="h2_p">Pâtisserie</h2>
-        <h2 class="header" id="h2_c">Chocolaterie</h2>
-        <h2 class="header" id="h2_contact">Contact</h2>
+        <a href="#" id="h1">Au Fournil Gourmand</a>
+        <a class="header" id="h2_b" href="#boul_start">Boulangerie</a>
+        <a class="header" id="h2_p" href="#pat_start">Pâtisserie</a>
+        <a class="header" id="h2_c" href="#choco_start">Chocolaterie</a>
+        <a class="header" id="h2_contact" href="#footer">Contact</a>
     </div>
     <img src="src/Header.svg" alt="header" class="header_img">
     <div class="pains">
@@ -30,16 +30,85 @@
         <p>100% FAITS MAISON</p>
     </div>
     
-    <span class="underline">________________________________</span>
+    <span class="underline" id="boul_start">________________________________</span>
 
-    <div class="boulangerie">
+    <div class="categories">
         <p id="title">Boulangerie</p>
         <span>Large choix de pains conçu spécialement pour vous,</span>
 
-        <p id="desc">Toutes les variétés de pains et baguettes que nous proposons
-            à la Boulangerie Au Fournil Gourmand, sont pétris et cuits sur place. 
-            Certaines recettes sont uniques, élaborées par nos artisans boulangers.</p>
+        <div class="desc">
+            <p>Toutes les variétés de pains et baguettes que nous proposons
+                à la Boulangerie <strong>Au Fournil Gourmand</strong>, sont pétris et cuits sur place. 
+                Certaines recettes sont uniques, élaborées par nos artisans boulangers.</p>
+        </div>
+        
         <img src="src/Boulangerie.png" alt="pains">
     </div>
+
+    <span class="underline" id="pat_start">________________________________</span>
+
+    <div class="categories">
+        <p id="title">Pâtisserie</p>
+        <span>Large choix de pâtisseries délicieuses, spécialement pour vous</span>
+
+        <div class="desc">
+            <p>À la boulangerie <strong>Au Fournil Gourmand</strong>, 
+                nous vous proposons un vaste choix de pâtisseries, toutes réalisées maison.
+                <br>Nous faisons des Gateaux/Pâtisseries sur mesure.</p>
+        </div>
+        
+        <img src="src/Patisserie.png" alt="Patisserie">
+    </div>
+
+    <span class="underline" id="choco_start">________________________________</span>
+
+    <div class="categories">
+        <p id="title">Chocolaterie</p>
+        <span>Large choix de chocolats durant la periode de pâques,</span>
+
+        <div class="desc">
+            <p>À la boulangerie <strong>Au Fournil Gourmand</strong>, 
+               <br> Nos chocolats sont cuits et moulés sur place. 
+                <br>Certaines recettes sont uniques, élaborées par nos artisans.</p>
+        </div>
+        
+        <img src="src/Choco.png" alt="choco">
+    </div>
+
+    <footer id="footer">
+        <div class="Contact">
+            <h1 id="title_f">Au Fournil Gourmand</h1>
+            <p id="contact_p">Contact : <br><br>Tel : 04 94 67 98 57
+                <br>Adresse : 7 place du Caou, Figanières, France, 83830</p>
+        </div>
+        <div class="Horaires">
+            <p id="horaires_p">Horaires :<br><br>
+
+                Lundi : 06:30 - 13:00 <br>
+                Mardi : 06:30 - 13:00 <br>
+                Mercredi : 06:30 - 12:30 <br> <br>
+                
+                Jeudi : FERMÉ
+            </p>
+            <p id="horaires_p-1">
+                Vendredi : 06:30 - 13:00 <br>
+                Samedi : 06:30 - 13:00 <br>
+                Dimanche : 06:30 - 13:00 <br>
+            </p>
+        </div>
+    </footer>
+    <div class="mentions">
+        <a id="légales" href="">Mentions légales</a>
+        <a id="politique" href="">Politique de confidentialité</a>
+        
+        <form action="https://www.facebook.com/people/Au-fournil-gourmand/100045246415234/" id="facebook_form">
+            <input type="image" src="src/facebook.svg" alt="Submit" id="fb_img">
+        </form>
+        <form action="https://www.instagram.com/au_fournil_gourmand/" id="insta_form">
+            <input type="image" src="src/instagram.svg" alt="Submit" id="insta_img">
+        </form>
+    </div>
+
+    <script src="js/sticky_h.js"></script>
 </body>
 </html>

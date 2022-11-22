@@ -5,36 +5,55 @@
 
 * {
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
-h1 {
+#h1 {
     font-family: 'Fredoka', sans-serif;
     font-size: 25px;
     color: #FF7A00;
     margin-top: var(--main-margin-top);
     margin-left: var(--main-margin-left);
+    text-decoration: none;
+    font-style: bold;
 }
 
 .header {
     font-family: 'Fredoka', sans-serif;
     margin-top: var(--main-margin-top);
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    background-color: white;
+    font-weight: bold;
+    z-index:100;
+}
+
+.sticky {
+    position: fixed;
+    margin-top: 0px;
+    padding-top: var(--main-margin-top);
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #h2_b {
     margin-left: 350px;
+    background-color: rgba(255, 255, 255, 0);
 }
 #h2_p {
     margin-left: 70px;
+    background-color: rgba(255, 255, 255, 0);
 }
 #h2_c {
     margin-left: 70px;
+    background-color: rgba(255, 255, 255, 0);
 }
 #h2_contact {
     margin-left: 450px;
-}
-
-.header {
-    display: flex;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .header_img {
@@ -74,7 +93,7 @@ h1 {
     margin-top: 60px;
 }
 
-.boulangerie span {
+.categories span {
     font-family: 'Forum', cursive;
     display: flex;
     justify-content: center;
@@ -83,17 +102,122 @@ h1 {
     color: #4F4D4D;
 }
 
-#desc {
+.desc {
     font-family: 'Forum', cursive;
     font-size: 30px;
     margin-top: 80px;
     width: 800px;
     margin-left: var(--main-margin-left);
+    display: flex;
 }
 
-.boulangerie img {
-    margin-top: 80px;
-    height: 100%;
+.categories img {
+    transform: scale(0.86);
+    height: 700px;
+    object-fit: cover;
+}
+
+.categories {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+footer {
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #FF7A00;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#title_f {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--main-margin-left);
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+footer p {
+    margin-left: var(--main-margin-left);
+    font-size: 22px;
+}
+
+.Horaires {
+    display: flex;
+}
+
+#contact_p {
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+#horaires_p {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 400px;
+}
+
+#horaires_p-1 {
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
+.mentions {
+    display: flex;
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+    width: 100%;
+    background-color: #FFA800;
+    color: white;
+    font-size: 19px;
+}
+
+#légales {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: var(--main-margin-left);
+    text-decoration: none;
+    color: white;
+}
+
+#politique {
+    margin-left: 80px;
+    text-decoration: none;
+    color: white;
+}
+
+#légales:hover {
+    text-decoration: underline;
+}
+
+#politique:hover {
+    text-decoration: underline;
+}
+
+#facebook_form {
+    margin-left: 1130px;
+}
+
+#insta_form {
+    margin-left: 10px;
+}
+
+input[type=image] {
+    display: flex;
+    align-items: center;
+}
+
+#fb_img {
+    width: 14px;
+}
+
+#insta_img {
+    width: 25px;
+    margin-left: 10px;
 }
