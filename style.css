@@ -16,6 +16,7 @@
     margin-left: var(--main-margin-left);
     text-decoration: none;
     font-style: bold;
+    transition: 0.3s;
 }
 
 .header {
@@ -28,6 +29,8 @@
     background-color: white;
     font-weight: bold;
     z-index:100;
+    gap: 70px;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .sticky {
@@ -40,25 +43,30 @@
 }
 
 #h2_b {
-    margin-left: 350px;
-    background-color: rgba(255, 255, 255, 0);
+    margin-left: 280px;
+    transition: 0.3s;
 }
 #h2_p {
-    margin-left: 70px;
-    background-color: rgba(255, 255, 255, 0);
+    transition: 0.3s;
 }
 #h2_c {
-    margin-left: 70px;
-    background-color: rgba(255, 255, 255, 0);
+    transition: 0.3s;
 }
 #h2_contact {
-    margin-left: 450px;
-    background-color: rgba(255, 255, 255, 0);
+    margin-left: 380px;
+    transition: 0.3s;
 }
 
-.header_img {
-    width: 100%;
+.header a:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+#header_img {
+    display: inline-block;
     margin-top: 45px;
+    content: url('src/Header.svg');
+    width: 100%;
 }
 
 .pains {
@@ -83,6 +91,7 @@
     justify-content: center;
     color: #FF7A00;
     font-size: 70px;
+    user-select: none;
 }
 
 #title{
@@ -211,6 +220,7 @@ footer p {
 input[type=image] {
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 #fb_img {
@@ -220,4 +230,8 @@ input[type=image] {
 #insta_img {
     width: 25px;
     margin-left: 10px;
+}
+
+img {
+    user-select: none;
 }
