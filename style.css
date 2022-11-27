@@ -120,6 +120,11 @@
     display: flex;
 }
 
+.desc p::before {
+    content: "Au Fournil Gourmand";
+    color: red;
+}
+
 .categories img {
     transform: scale(0.86);
     height: 700px;
